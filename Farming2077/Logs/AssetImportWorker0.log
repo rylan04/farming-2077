@@ -168,3 +168,10 @@ Received Import Request.
   path: Assets/Images/Sheep.png
   artifactKey: Guid(25fcaf760115d704c9a727de2b0316a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Images/Sheep.png using Guid(25fcaf760115d704c9a727de2b0316a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4c3637be1b327309db95f7e6fcd2447') in 0.009031 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 145.980617 seconds.
+  path: Assets/Scenes/Barn.unity
+  artifactKey: Guid(bd88b6f18da6c8a41aeeceeb6378eab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Barn.unity using Guid(bd88b6f18da6c8a41aeeceeb6378eab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db81e2a382b389542057e53e1734f6ce') in 0.000638 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
