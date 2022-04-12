@@ -10,13 +10,13 @@ public class ApplyPromoter : MonoBehaviour
     
     public void Feed(){
         if (Globals.Inventory["sushi"] > 0) {
-    	    exp.fillAmount += 0.25f;
+    	    exp.fillAmount += 0.09f;
             Globals.Inventory["sushi"] -= 1;
         } else if (Globals.Inventory["strawberry"] > 0) {
-    	    exp.fillAmount += 0.2f;
+    	    exp.fillAmount += 0.04f;
             Globals.Inventory["strawberry"] -= 1;
         } else if (Globals.Inventory["pizza"] > 0) {
-    	    exp.fillAmount += 0.1f;
+    	    exp.fillAmount += 0.015f;
             Globals.Inventory["pizza"] -= 1;
         }
     }
