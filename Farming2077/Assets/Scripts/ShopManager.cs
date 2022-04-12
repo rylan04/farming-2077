@@ -29,5 +29,5 @@ public class ShopManager : MonoBehaviour
     	Globals.Inventory["sushi"] += 1;
     	Globals.YeeHaws -= 10; 
     }
-  } 
+  }
 }
