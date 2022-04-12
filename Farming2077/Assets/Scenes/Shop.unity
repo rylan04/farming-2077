@@ -2313,7 +2313,7 @@ GameObject:
   - component: {fileID: 273800156}
   - component: {fileID: 273800155}
   m_Layer: 5
-  m_Name: Button
+  m_Name: BtnPizza
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2382,7 +2382,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 273800156}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1471760128}
+        m_TargetAssemblyTypeName: ShopManager, Assembly-CSharp
+        m_MethodName: buyPizza
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &273800156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2511,6 +2523,7 @@ GameObject:
   - component: {fileID: 412010409}
   - component: {fileID: 412010408}
   - component: {fileID: 412010407}
+  - component: {fileID: 412010410}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2583,6 +2596,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &412010410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 412010406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af0aa123471a3456793ef828c682c2a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numOfYeeHaws: {fileID: 92022720}
 --- !u!1 &454261787
 GameObject:
   m_ObjectHideFlags: 0
@@ -2814,7 +2840,7 @@ GameObject:
   - component: {fileID: 619302165}
   - component: {fileID: 619302164}
   m_Layer: 5
-  m_Name: Button
+  m_Name: BtnSushi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2883,7 +2909,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 619302165}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1471760128}
+        m_TargetAssemblyTypeName: ShopManager, Assembly-CSharp
+        m_MethodName: buySushi
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &619302165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4589,7 +4627,7 @@ GameObject:
   - component: {fileID: 1310403884}
   - component: {fileID: 1310403883}
   m_Layer: 5
-  m_Name: Button
+  m_Name: BtnStrawberry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4658,7 +4696,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1310403884}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1471760128}
+        m_TargetAssemblyTypeName: ShopManager, Assembly-CSharp
+        m_MethodName: buyStrawberry
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1310403884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4697,6 +4747,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1310403881}
   m_CullTransparentMesh: 1
+--- !u!1 &1471760127
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1471760129}
+  - component: {fileID: 1471760128}
+  m_Layer: 0
+  m_Name: ShopSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1471760128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1471760127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a23b09f89690b7a109e6c4293e731806, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1471760129
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1471760127}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 322.22385, y: 831.708, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1517494053
 GameObject:
   m_ObjectHideFlags: 0
