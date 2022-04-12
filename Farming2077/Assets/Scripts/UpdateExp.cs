@@ -23,7 +23,7 @@ public class UpdateExp : MonoBehaviour
         exp.fillAmount += 0.01f * Time.deltaTime;
         Globals.XP = exp.fillAmount;
 
-        if (exp.fillAmount > 0.98 ){
+        if (exp.fillAmount > 0.98){
             exp.fillAmount = 0;
             Globals.CurrentAnimal += 1;
         }
