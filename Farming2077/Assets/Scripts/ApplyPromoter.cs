@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class ApplyPromoter : MonoBehaviour
 {
     public Image exp;
+    public Button feedBtn;
     
     public void Feed(){
         if (Globals.Inventory["sushi"] > 0) {
@@ -23,12 +24,17 @@ public class ApplyPromoter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        feedBtn.interactable = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (Globals.Inventory["sushi"] > 0 || Globals.Inventory["strawberry"] > 0 || Globals.Inventory["pizza"] > 0) {
+            feedBtn.interactable = true;
+        }
+        else {
+            feedBtn.interactable = false;
+        }
     }
 }
