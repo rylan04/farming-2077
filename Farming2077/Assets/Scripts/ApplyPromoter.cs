@@ -8,7 +8,16 @@ public class ApplyPromoter : MonoBehaviour
     public Image exp;
     
     public void Feed(){
-    	exp.fillAmount += 0.25f;
+        if (Globals.Inventory["sushi"] > 0) {
+    	    exp.fillAmount += 0.25f;
+            Globals.Inventory["sushi"] -= 1;
+        } else if (Globals.Inventory["strawberry"] > 0) {
+    	    exp.fillAmount += 0.2f;
+            Globals.Inventory["strawberry"] -= 1;
+        } else if (Globals.Inventory["pizza"] > 0) {
+    	    exp.fillAmount += 0.1f;
+            Globals.Inventory["pizza"] -= 1;
+        }
     }
     
     // Start is called before the first frame update
