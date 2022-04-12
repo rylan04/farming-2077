@@ -2527,6 +2527,7 @@ GameObject:
   - component: {fileID: 884047333}
   - component: {fileID: 884047332}
   - component: {fileID: 884047331}
+  - component: {fileID: 884047334}
   m_Layer: 5
   m_Name: ApplyPromoter
   m_TagString: Untagged
@@ -2597,7 +2598,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 884047332}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 884047334}
+        m_TargetAssemblyTypeName: ApplyPromoter, Assembly-CSharp
+        m_MethodName: Feed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &884047332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2636,6 +2649,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 884047329}
   m_CullTransparentMesh: 1
+--- !u!114 &884047334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884047329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 166d1d2dd2929d88b9723c9a81edd065, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  exp: {fileID: 962711166}
 --- !u!1 &962711164
 GameObject:
   m_ObjectHideFlags: 0
@@ -2698,7 +2724,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 1
+  m_FillAmount: 0
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -3361,6 +3387,7 @@ GameObject:
   - component: {fileID: 1687463138}
   - component: {fileID: 1687463140}
   - component: {fileID: 1687463139}
+  - component: {fileID: 1687463141}
   m_Layer: 5
   m_Name: Exp
   m_TagString: Untagged
@@ -3426,6 +3453,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1687463137}
   m_CullTransparentMesh: 1
+--- !u!114 &1687463141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687463137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2021351003ef5768caddf71d367499fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeStart: 0
+  specimenLvl: 0
+  exp: {fileID: 962711166}
+  specimen: {fileID: 355965077}
+  sheep: {fileID: 21300000, guid: 25fcaf760115d704c9a727de2b0316a8, type: 3}
+  cow: {fileID: 21300000, guid: f18a09df090f52a45b17fe94cea1afa6, type: 3}
 --- !u!1 &1944237541
 GameObject:
   m_ObjectHideFlags: 0
