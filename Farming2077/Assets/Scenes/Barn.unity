@@ -3488,9 +3488,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: d69e40f53d3a2844e82caa5278cae78a, type: 3}
-        m_TargetAssemblyTypeName: UnityEngine.Object, UnityEngine
-        m_MethodName: 
+      - m_Target: {fileID: 1532113567}
+        m_TargetAssemblyTypeName: Harvest, Assembly-CSharp
+        m_MethodName: HarvestCoin
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
