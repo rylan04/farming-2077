@@ -3551,6 +3551,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   harvestBtn: {fileID: 1532113564}
+  numOfYeeHaws: {fileID: 530105326}
+  harvestAvailable: 0
+  timePassed: 0
 --- !u!1 &1533124182
 GameObject:
   m_ObjectHideFlags: 0
