@@ -8,6 +8,7 @@ public class SceneSwitcher : MonoBehaviour
     int BARN = 1;
     int SHOP = 2;
     int MAP = 3;
+    int WIN = 4;
 
     public void playButtonIsPressed()
     {
@@ -24,5 +25,8 @@ public class SceneSwitcher : MonoBehaviour
     public void shopButtonIsPressed()
     {
         SceneManager.LoadScene(SHOP);
+    }
+    public void winGame(){
+    	SceneManager.LoadScene(WIN);
     }
 }

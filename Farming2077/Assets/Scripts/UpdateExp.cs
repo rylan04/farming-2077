@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UpdateExp : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class UpdateExp : MonoBehaviour
     public Image specimen;
     public Sprite sheep;
     public Sprite cow;
+    public Sprite wagyu;
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +22,7 @@ public class UpdateExp : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+    	
         exp.fillAmount += 0.01f * Time.deltaTime;
         Globals.XP = exp.fillAmount;
 
@@ -32,6 +35,9 @@ public class UpdateExp : MonoBehaviour
             specimen.sprite = sheep;
         }else if (Globals.CurrentAnimal == 2){
             specimen.sprite = cow;
+        }else if (Globals.CurrentAnimal == 3){
+            specimen.sprite = wagyu;
+            SceneManager.LoadScene(4);
         }
     }
 }
