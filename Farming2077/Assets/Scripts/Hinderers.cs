@@ -17,7 +17,7 @@ public class Hinderers : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        int RandomStatus = Random.Range(0,10000);
+        int RandomStatus = Random.Range(0,8000);
         
         if (RandomStatus == 3 && !Globals.hasStatus) {
             Globals.YeeHaws -= 10;
