@@ -12,7 +12,7 @@ public class Harvest : MonoBehaviour
 
     public void HarvestCoin() {
         if (Globals.CurrentAnimal == 0) {
-            Globals.YeeHaws += 500;
+            Globals.YeeHaws += 5;
         } else if (Globals.CurrentAnimal == 1) {
             Globals.YeeHaws += 10;
         } else if (Globals.CurrentAnimal == 2) {
