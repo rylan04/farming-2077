@@ -14,6 +14,8 @@ public class ApplyPromoter : MonoBehaviour
     	if (Globals.Inventory["pizza"] > 0) {
     	    exp.fillAmount += 0.015f;
             Globals.Inventory["pizza"] -= 1;
+            Globals.hasStatus = false;
+            Globals.AnimalHealth = 1;
         }
     }
     
@@ -21,6 +23,8 @@ public class ApplyPromoter : MonoBehaviour
     	if (Globals.Inventory["strawberry"] > 0) {
     	    exp.fillAmount += 0.04f;
             Globals.Inventory["strawberry"] -= 1;
+            Globals.hasStatus = false;
+            Globals.AnimalHealth = 1;
         }
     }
     
@@ -28,6 +32,8 @@ public class ApplyPromoter : MonoBehaviour
     	if (Globals.Inventory["sushi"] > 0) {
     	    exp.fillAmount += 0.09f;
             Globals.Inventory["sushi"] -= 1;
+            Globals.hasStatus = false;
+            Globals.AnimalHealth = 1;
         }
     }
     

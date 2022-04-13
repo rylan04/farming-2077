@@ -22,9 +22,10 @@ public class UpdateExp : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-    	
-        exp.fillAmount += 0.01f * Time.deltaTime;
-        Globals.XP = exp.fillAmount;
+    	if (!Globals.hasStatus){
+            exp.fillAmount += 0.01f * Time.deltaTime;
+            Globals.XP = exp.fillAmount;
+        }
 
         if (exp.fillAmount > 0.98){
             exp.fillAmount = 0;
